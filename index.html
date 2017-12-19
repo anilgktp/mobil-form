@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" />
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Mobil Form</title>
+</head>
+<body>
+  <div class="container cols-sm-10">
+    <div class="row main">
+      <div class="main-login main-center">
+        <form method="post" action="/register" name="register">
+          <div class="form-group">
+          <label for="form" class="cols-md-4 control-label"><b>FORM KONUSU</b></label>
+          <div class="cols-sm-10">
+              <select class="cols-md-12 select2" style="width: 100%;" placeholder="Seçiniz">
+                  <option></option>
+                  <option class="l2"> Öneri </option>
+                  <option class="l3"> Şikayet </option>
+                  <option class="l4"> Görüş </option>
+              </select>
+        </div>
+        <div class="cols-sm-10">
+          <label for="form" class="cols-md-4 control-label" style="margin-bottom:0px;"><b>O BU MU BU MU?</b></label>    
+          <div class="form-group check">
+            <div class="col-md-4 control"> 
+              <label class="control control--checkbox">
+                <span>Odur</span>
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+              </label>
+            </div>
+            <div class="col-md-4 control"> 
+              <label class="control control--checkbox">
+                <span>Odur</span>
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+              </label>
+            </div>  
+            </div>
+          </div>
+        <div class="cols-sm-10">
+          <div class="form-group cols-md-4">
+            <label for="name" class="required">ADINIZ</label>
+            <input type="text" name="name" class="form-control" id="name" required title="Please enter your name" data-error="Ad kısmı zorunludur">
+          </div>
+      </div>
+      <div class="cols-sm-10">
+          <div class="form-group cols-md-4">
+            <label for="number" class="required">TELEFON NUMARANIZ</label>
+            <input type="number" name="number" class="form-control" id="number" required data-error="Telefon kısmı zorunludur">
+          </div>
+       </div>
+       <div class="cols-sm-10">
+          <div class="form-group cols-md-4">
+            <label for="password" class="required">ŞİFRENİZ</label>
+            <input type="password" name="password" class="form-control" id="password" required data-error="Şifre kısmı zorunludur">
+          </div>
+        </div>
+        <div class="cols-sm-10">
+          <div class="form-group cols-md-4">
+            <label for="conf-password" class="required">ŞİFRENİZ(TEKRAR)</label>
+            <input type="password" name="conf-password" class="form-control" id="conf-password" required data-error="Lütfen aynı şifreyi giriniz">
+          </div>
+        </div>
+        <div class="cols-sm-10">
+          <div class="form-group birthday cols-md-4">
+            <label for="form-konusu" class="cols-md-4 control-label"><b>DOĞUM TARİHİNİZ</b></label>
+            <input type="date" name="birthday" class="form-control" id="birthday" placeholder="8-8-2017" required data-error="Doğum tarihi kısmı zorunludur">
+        </div>
+        <div class="cols-sm-10">
+          <div class="form-group cols-md-4">
+            <div class="register">
+             <input type="submit" value="Gönder" class="btn">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/password-signup.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
